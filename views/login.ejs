@@ -1,0 +1,63 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {src: "/login.js"}) %>
+  <body>
+    <div id="main">
+     <%- include('partials/header', {title: "Login", username}) %>
+    <main>
+      <!-- Registration form -->
+      <p>Create a new account:</p>
+
+      <form id="account-creation">
+        <input
+          name="username"
+          type="text"
+          maxlength="20"
+          placeholder="Username"
+        />
+        <!--           "Maximum length 20 characters, aplhanumeric only" -->
+        
+        <input
+          name="password"
+          type="text"
+          maxlength="100"
+          placeholder="Password"
+        />
+<!--         "Must be at least 8 charcters and contain a lowercase letter, an uppercase letter, and a number or special character" -->
+        <button type="submit" id="submit-account-creation">Create Account</button>
+      </form>
+       
+      
+      
+      
+      
+      <!-- login form -->
+      <p>Login:</p>
+      <form id="account-login">
+        <input
+          name="username"
+          type="text"
+          maxlength="20"
+          placeholder="Username"
+        />
+        
+        <input
+          name="password"
+          type="text"
+          maxlength="100"
+          placeholder="Password"
+        />
+        <button type="submit" id="submit-account-login">Login</button>
+      </form>
+      
+      
+     
+      
+      
+      
+    </main>
+    </div>
+  </body>
+</html>

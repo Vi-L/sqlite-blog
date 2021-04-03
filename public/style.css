@@ -1,0 +1,158 @@
+/* styles */
+/* called by your view template */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* https://meyerweb.com/eric/css/link-specificity.html */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #2fd4f5;
+  text-decoration: none;
+}
+a:hover {
+  color: #8beef7;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+body {
+  
+}
+
+main {
+  padding: 2em;
+}
+
+h1 {
+  color: #333;
+  font-weight: 700;
+}
+
+.error {
+  position: fixed;
+  background: red;
+  color: yellow;
+  height: 50px;
+  width: 750px;
+}  
+
+.post-text {
+/*  white-space: pre; */
+}
+
+header {
+  background: #ebf9ff;
+  padding: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+header > h1 {
+  margin-right: 1em;
+}
+
+nav {
+}
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+nav > ul > li {
+  display: inline;
+  margin-right: 1em;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+#post-creation {
+  max-width: 775px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9fdffc;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+input.blur {
+  border: 1px transparent;
+}
+
+input.focus {
+  border: 2px black;
+}
+
+#posts-list {
+  list-style-type: none;
+}
+
+.footer-elem {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 500px;
+  background-color: #ebf9ff;
+}
+.footer-elem > div {
+  margin: 0.5em;
+}
+.post-list-li {
+  margin-top: 50px;
+  
+}

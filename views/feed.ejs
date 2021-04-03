@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head', {src: "/feed.js"}) %>
+  <body>
+     <%- include('partials/header', {title: "Feed", username}) %>
+    <main>
+      <button id="next-button">
+        Next
+      </button>
+      <p id="post-count"></p>
+      <ul id="posts-list">
+      </ul>
+    </main>
+  </body>
+</html>  
